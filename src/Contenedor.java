@@ -24,12 +24,21 @@ public class Contenedor {
         return inspeccionado;
     }
 
+
     public int getPrioridad() {
         return prioridad;
     }
 
     public String getPais() {
         return pais;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public String getEmisor() {
+        return emisor;
     }
 
     //Constructores
