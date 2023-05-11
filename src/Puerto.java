@@ -109,7 +109,12 @@ public class Puerto {
     }
 
 
-    public String mostrar_por_prioridad(int prioridad){
+
+
+
+
+
+     public String mostrar_por_prioridad(int prioridad){
         boolean control = false;
         String s = new String();
         for (int k = 0; k < hubs.length; k++) {
@@ -117,7 +122,7 @@ public class Puerto {
                 for (int j = 0; j < hubs[k].m[10].length; j++) {
                     if (hubs[k].m[10][j] != null && hubs[k].m[10][j].getPrioridad() == prioridad){
                         s+="ID:"+hubs[k].m[10][j].getId()+"REMITENTE:"+hubs[k].m[10][j].getEmisor()+"PESO: "+hubs[k].m[10][j].getPeso()+"ESTADO CHEQUEO: "+hubs[k].m[10][j].isInspeccionado()+"\n";
-                        control = true; //Hemos encontrado el contenedor
+                        control = true;
                     }
                 }
 
@@ -125,8 +130,10 @@ public class Puerto {
         if (!control){
             return "No se ha encontrado el contenedor";
         }
+
         return s;
     }
+
 
 
 
