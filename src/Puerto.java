@@ -120,7 +120,7 @@ public class Puerto {
         for (int k = 0; k < hubs.length; k++) {
             for (int j = 0; j < hubs[k].m[9].length; j++) {
                     if (hubs[k].m[9][j] != null && hubs[k].m[9][j].getPrioridad() == prioridad){
-                        s+="ID:"+hubs[k].m[9][j].getId()+"REMITENTE:"+hubs[k].m[9][j].getEmisor()+"PESO: "+hubs[k].m[9][j].getPeso()+"ESTADO CHEQUEO: "+hubs[k].m[9][j].isInspeccionado()+"\n";
+                        s+="ID:"+hubs[k].m[9][j].getId()+" ,REMITENTE:"+hubs[k].m[9][j].getEmisor()+" ,PESO: "+hubs[k].m[9][j].getPeso()+" ,ESTADO CHEQUEO: "+hubs[k].m[9][j].isInspeccionado()+"\n";
                         control = true;
                     }
                 }
