@@ -113,14 +113,14 @@ public class Puerto {
         boolean control = false;
         String s = new String();
         for (int k = 0; k < hubs.length; k++) {
-            for (int i = 0; i < hubs[k].m.length; i++) {
-                for (int j = 0; j < hubs[k].m[i].length; j++) {
+
+                for (int j = 0; j < hubs[k].m[10].length; j++) {
                     if (hubs[k].m[10][j] != null && hubs[k].m[10][j].getPrioridad() == prioridad){
                         s+="ID:"+hubs[k].m[10][j].getId()+"REMITENTE:"+hubs[k].m[10][j].getEmisor()+"PESO: "+hubs[k].m[10][j].getPeso()+"ESTADO CHEQUEO: "+hubs[k].m[10][j].isInspeccionado()+"\n";
                         control = true; //Hemos encontrado el contenedor
                     }
                 }
-            }
+
         }
         if (!control){
             return "No se ha encontrado el contenedor";
